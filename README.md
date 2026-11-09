@@ -6,6 +6,14 @@ All data lives in React state for the session. The project intentionally avoids 
 
 > **Follow-along project.** This app was built while following **React — The Complete Guide (Academind / Maximilian Schwarzmüller)**. It is included in the portfolio as a learning exercise, not as a production product. The implementation is my own work based on the course material.
 
+## Live demo
+
+| | |
+| --- | --- |
+| **Live site** | https://mariogranada.github.io/task-manager/ |
+| **Repository** | https://github.com/MarioGranada/task-manager |
+| **Portfolio summary** | Projects-and-tasks manager in React + Tailwind built around refs, portals and an imperative native-dialog modal, with per-project task lists and derived UI state. |
+
 ## Features
 
 - Sidebar with project creation and selection.
@@ -95,6 +103,7 @@ Project and task ids come from `Math.random()`. Tasks store a `projectId`, and t
 
 ## Deployment
 
+- **Live:** `.github/workflows/deploy.yml` builds the app on every push to the default branch and publishes `dist/` (plus a `404.html` SPA fallback) to the `gh-pages` branch, which GitHub Pages serves at https://mariogranada.github.io/task-manager/.
 - Target: GitHub Actions can build the Vite app and publish `dist/` to GitHub Pages.
 - Set the Vite `base` option to the repository path for a project Pages site.
 - No backend, routing, or database is required.
